@@ -7,7 +7,7 @@ Form per la raccolta dei dati dei fuorisede che vogliono votare al referendum de
 -  Form completo con validazione dei dati
 -  Campi obbligatori: Nome, Cognome, Codice Fiscale, Telefono, Email, Comune, Provincia, Regione
 -  Informativa sulla privacy con checkbox di accettazione
--  Avviso in evidenza sulla necessità della tessera elettorale
+-  Avviso in evidenza sulla necessitï¿½ della tessera elettorale
 -  Database PostgreSQL su Neon
 -  API serverless su Vercel
 -  Design responsive e user-friendly
@@ -42,7 +42,7 @@ CREATE TABLE fuorisede_registrations (
 
 ## Deploy su Vercel
 
-### 1. Installazione Vercel CLI (se non l'hai già)
+### 1. Installazione Vercel CLI (se non l'hai giï¿½)
 
 ```bash
 npm install -g vercel
@@ -72,7 +72,7 @@ Dopo il deploy, aggiungi la variabile d'ambiente `DATABASE_URL` nel dashboard di
 2. Vai su **Settings** > **Environment Variables**
 3. Aggiungi:
    - **Name:** `DATABASE_URL`
-   - **Value:** `postgresql://neondb_owner:npg_HZt5kxp7uzwM@ep-damp-surf-akq2a8s5-pooler.c-3.us-west-2.aws.neon.tech/neondb?channel_binding=require&sslmode=require`
+   - **Value:** `postgresql://neondb_owner:`
    - **Environments:** Production, Preview, Development
 
 4. Redeploy il progetto:
@@ -95,7 +95,7 @@ npm install
 npm run dev
 ```
 
-Il sito sarà disponibile su `http://localhost:5173`
+Il sito sarï¿½ disponibile su `http://localhost:5173`
 
 ## Esportare i dati
 
@@ -145,7 +145,7 @@ COPY (
 
 ## Note Importanti
 
-- Il codice fiscale è un campo univoco: non è possibile registrare lo stesso codice fiscale più volte
+- Il codice fiscale ï¿½ un campo univoco: non ï¿½ possibile registrare lo stesso codice fiscale piï¿½ volte
 - Tutti i campi sono obbligatori
-- I dati vengono salvati in conformità al GDPR
-- L'accettazione della privacy è obbligatoria
+- I dati vengono salvati in conformitï¿½ al GDPR
+- L'accettazione della privacy ï¿½ obbligatoria
